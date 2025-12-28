@@ -1,0 +1,85 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 2560 574 186 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/host/linux_IC_env/systemc_work/uvm_matlab/uvm_dpi_crc_test/sim/top_tb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 2467609.680034
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 14
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/host/linux_IC_env/systemc_work/uvm_matlab/uvm_dpi_crc_test/sim/top_tb.fsdb"
+addSignal -h 15 /top_tb/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -BIN /top_tb/if_inst/rx_lp_data[7:0]
+addSignal -h 15 -holdScope rx_lp_eop
+addSignal -h 15 -holdScope rx_lp_ready
+addSignal -h 15 -holdScope rx_lp_sop
+addSignal -h 15 -holdScope rx_lp_valid
+addSignal -h 15 /top_tb/dut/crc5_en
+addSignal -h 15 -holdScope crc5_err
+addSignal -h 15 /top_tb/dut/u_usb_link_rx/crc5_ok
+addSignal -h 15 /top_tb/if_inst/rx_pid_en
+addSignal -h 15 -holdScope rx_pid[3:0]
+addSignal -h 15 -holdScope rx_endp[3:0]
+addSignal -h 15 -holdScope crc5_err
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/host/linux_IC_env/systemc_work/uvm_matlab/uvm_dpi_crc_test/sim/top_tb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/top_tb"
+"/top_tb/dut"
+
+SCOPE_LIST_BEGIN
+"/top_tb"
+"/top_tb/dut"
+"/top_tb/if_inst"
+"/top_tb/dut/u_usb_link_rx"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

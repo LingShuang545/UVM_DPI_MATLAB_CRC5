@@ -1,0 +1,3 @@
+#!SV_LIBRARIES
+../matlab/output/libcrc5_calc
+../matlab/libcrc5_calc_sim
